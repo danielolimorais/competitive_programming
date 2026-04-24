@@ -4,10 +4,10 @@ using namespace std;
 
 int main(){
     vector<int> crivo;
-    vector<bool> nprimos(1e5+10);
-    for(int i = 2; i<=1e5;i++){
+    vector<bool> nprimos(1e5+5);
+    for(int i = 2; i<=1e5+5;i++){
         if(!nprimos[i]){
-            for(int j=i*2;j<1e5;j+=i){
+            for(int j=i*2;j<1e5+5;j+=i){
                 nprimos[j] = true;
             }
         }
